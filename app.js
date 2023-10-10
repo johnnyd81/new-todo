@@ -2,6 +2,7 @@ const form = document.querySelector(".form");
 const list = document.querySelector(".list");
 const search = document.querySelector(".searchInput");
 
+//creates and adds new todo to the user interface
 const createTodo = (todo) => {
   let html = `
   <li class="listItem">${todo}<i class='bx bxs-trash-alt delete'></i>
@@ -11,10 +12,11 @@ const createTodo = (todo) => {
 };
 
 form.addEventListener("submit", (e) => {
+  //prevents the default behaviour of a form element
   e.preventDefault();
 
   const todo = form.todoInput.value.trim();
-
+//checks the length of each todo
   if (todo.length < 5 || todo.length > 40) {
     alert(
       "Each todo has to be more than 4 characters and less than 41 characters"
