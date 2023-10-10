@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My todo-list</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">My Todo-List</h1>
+    </header>
+    <!--search section-->
+    <form class="searchInput">
+      <input type="text" name="sInput" placeholder="Search todos..." />
+    </form>
+
+    <!--todo-item section-->
+    <div class="todoContainer">
+      <ol class="list">
+        <li class="listItem">
+          Buy groceries
+          <i class="bx bxs-trash-alt delete"></i>
+        </li>
+        <li class="listItem">
+          Service car
+          <i class="bx bxs-trash-alt delete"></i>
+        </li>
+        <li class="listItem">
+          Clean garage
+          <i class="bx bxs-trash-alt delete"></i>
+        </li>
+      </ol>
+    </div>
+
+    <!--Add todo form-->
+    <div class="formContainer">
+      <form class="form">
+        <input
+          type="text"
+          name="todoInput"
+          placeholder="Please enter a todo and click enter..."
+        />
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
