@@ -1,3 +1,4 @@
+//DOM variables
 const form = document.querySelector(".form");
 const list = document.querySelector(".list");
 const search = document.querySelector(".searchInput");
@@ -28,6 +29,7 @@ form.addEventListener("submit", (e) => {
   }
 });
 
+//Single click event listener to handle all click events 
 list.addEventListener("click", function (e) {
   if (e.target.classList.contains("delete")) {
     e.target.parentElement.remove();
