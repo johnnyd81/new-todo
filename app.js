@@ -1,4 +1,4 @@
-//DOM variables
+//variables required to manipulate the DOM
 const form = document.querySelector(".form");
 const list = document.querySelector(".list");
 const search = document.querySelector(".searchInput");
